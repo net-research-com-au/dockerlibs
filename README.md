@@ -2,11 +2,11 @@
 List of Docker images and how tos for IT Infrastrcure admins 
 
 ## Docker image list
-|-|-|-|-|
+
 |Docker Name|Description|Purpose|Link|
 |-|-|-|-|
 |jupyter/datascience-notebook| DockerHub image. includes libraries for data analysis from the Julia, Python, and R communities.|Datat science and Data analysis using jupyter notebooks|https://hub.docker.com/r/jupyter/datascience-notebook|
-|jupyter/datascience-notebook:latest| DockerHub image. Running azure cli| Manage Azure using Azure cli| https://github.com/microsoft/containerregistry|
+|mcr.microsoft.com/azure-cli:latest| DockerHub image. Running azure cli| Manage Azure using Azure cli| https://github.com/microsoft/containerregistry|
 |-|-|-|-|
 
 ## docker commands
@@ -17,6 +17,8 @@ sudo docker start <continer id>    # start a container
 sudo docker stop <continer id>    # stop a container
 sudo docker attach <continer id>    # attach to console of container
 sudo docker rm <continer id>    # remove container instance (NOTE: does not delete the container base image)
+sudo docker rm $(sudo docker ps -a -q -f status=exited)  # remove docker instances which are exited or stoped
+sudo docker rmi <image name>  # deletes the image from the local system
 ```
 
 # How to use
