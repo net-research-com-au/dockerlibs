@@ -18,6 +18,7 @@ sudo docker stop <continer id>    # stop a container
 sudo docker attach <continer id>    # attach to console of container
 sudo docker rm <continer id>    # remove container instance (NOTE: does not delete the container base image)
 sudo docker rm $(sudo docker ps -a -q -f status=exited)  # remove docker instances which are exited or stoped
+sudo docker prune # this will also remove all stoped docker instances
 sudo docker rmi <image name>  # deletes the image from the local system
 ```
 
