@@ -7,7 +7,7 @@ List of Docker images and how tos for IT Infrastrcure admins
 |-|-|-|-|
 |jupyter/datascience-notebook| DockerHub image. includes libraries for data analysis from the Julia, Python, and R communities.|Datat science and Data analysis using jupyter notebooks|https://hub.docker.com/r/jupyter/datascience-notebook|
 |mcr.microsoft.com/azure-cli:latest| DockerHub image. Running azure cli| Manage Azure using Azure cli| https://github.com/microsoft/containerregistry|
-|-|-|-|-|
+|cytopia/ansible:latest-azure|DockerHub image. Ansible with Azure cli tools | For infrastructure CI/CD |https://github.com/cytopia/docker-ansible|
 
 ## docker commands
 ```shell
