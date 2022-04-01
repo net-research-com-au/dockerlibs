@@ -22,6 +22,22 @@ sudo docker prune # this will also remove all stoped docker instances
 sudo docker rmi <image name>  # deletes the image from the local system
 ```
 
+## docker build for python
+Python Docker build for python development
+
+```shell
+cd kitpython-docker
+docker build -t kitpython:v1 .
+docker run -it kitpython:v1
+```
+
+Push to docker repo
+```shell
+docker login
+docker tag kitpython:v1 dbnetdocker/kitpython:v1
+docker push dbnetdocker/kitpython:v1
+```
+
 # How to use
 ## jupyter/datascience-notebook
 

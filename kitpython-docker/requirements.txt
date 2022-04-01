@@ -1,0 +1,7 @@
+pylint
+bandit
+pytest
+flake8
+numpy
+pandas
+matplotlib
